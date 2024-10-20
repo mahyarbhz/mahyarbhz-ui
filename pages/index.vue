@@ -1,8 +1,9 @@
 <template>
     <div class="bg-white text-black">
       <section class="flex items-center justify-center h-screen">
-        <div class="text-center">
-          <h1 class="text-5xl font-bold">Welcome, I'm Mahyar.</h1>
+        <div class="text-left">
+          <h1 class="text-5xl font-bold">I'm Mahyar,</h1>
+          <p class="mt-4 text-md text-gray-500">Welcome to my persoanl blog!</p>
           <p class="mt-4 text-xl">Exploring the synergy of code and circuits.</p>
         </div>
       </section>
@@ -41,17 +42,28 @@
     </div>
   </template>
   
-  <script>
+  <!-- <script>
   export default {
     head() {
       return {
         title: 'My Personal Blog',
         meta: [
-          { hid: 'description', name: 'description', content: 'Welcome to my personal blog.' },
+          { hid: 'description', name: 'description', content: 'Aspiring electrical engineer and passionate programmer with a background in web and application development, robotics, and DevOps. Currently pursuing a degree in electrical engineering while exploring the intersection of technology and innovation.' },
         ],
       };
     },
   };
+  </script> -->
+
+  <script setup lang="ts">
+  useSeoMeta({
+    title: 'Mahyar Behzadi Blog',
+    ogTitle: 'Mahyar Behzadi Blog',
+    description: 'Aspiring electrical engineer and passionate programmer with a background in web and application development, robotics, and DevOps. Currently pursuing a degree in electrical engineering while exploring the intersection of technology and innovation.',
+    ogDescription: 'Aspiring electrical engineer and passionate programmer with a background in web and application development, robotics, and DevOps. Currently pursuing a degree in electrical engineering while exploring the intersection of technology and innovation.',
+    // ogImage: 'https://example.com/image.png',
+    twitterCard: 'summary_large_image'
+  });
   </script>
   
   <style scoped>
